@@ -206,6 +206,27 @@ Expected Concepts
 * Destructuring
 
 ---
+### Follow-up Question
+
+```js
+const arr = [1, 2, 3, 4];
+
+arr[10] = 100;
+
+console.log(arr.length);
+```
+
+Output:
+
+```js
+11
+```
+
+Reason:
+
+Array length is determined by the highest numeric index + 1.
+
+---
 
 ## Array Methods
 
