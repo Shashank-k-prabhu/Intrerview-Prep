@@ -30,3 +30,18 @@ const ar = users.reduce((acc,num)=>{
 },[])
 
 console.log(ar);
+
+
+const ar = users.reduce((acc,num)=>{
+  if(!acc.seen[num.id]){
+      acc.result.push(num);
+      acc.seen[num.id]=true
+  }
+  
+  return acc
+},{
+    seen:{},
+    result:[]
+})
+
+console.log(ar.result);
