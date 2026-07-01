@@ -13,3 +13,15 @@ const transactions = [
 // ]
 
 
+const newar = transactions.reduce((acc,num)=>{
+    if(!acc[num.id]){
+        acc[num.id]=num
+    }
+    else{
+       acc[num.id].amount+=num.amount
+    }
+    
+    return acc;
+},{})
+
+console.log(Object.values(newar))
